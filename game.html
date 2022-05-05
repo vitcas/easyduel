@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/mystyle.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bot.js"></script>
+<script src="js/mydeck.js"></script>
+<script type="text/javascript" src="js/file.json"></script>
+<script type="text/javascript" src="js/myscript.js"></script>
+</head>
+<body> 
+<table >
+  <tr>
+    <td>
+      <b id="tempo">60</b>
+    </td>
+    <td>
+      <img class="yourhand" id="hand6" src="img/c2.png">
+      <img class="yourhand" id="hand7" src="img/c2.png">
+      <img class="yourhand" id="hand8" src="img/c2.png">
+      <img class="yourhand" id="hand9" src="img/c2.png">
+      <img class="yourhand" id="hand10" src="img/c2.png">
+    </td>
+    <td style="width:260px;">
+      <img class="profile" id="p2" src="img/p2.jpg">
+      <p class="playerinfo">
+        Player 2
+        <br>
+        <b id="c9" class="lp">LP 8000</b>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:270px;height: 260px;padding: 0px;">
+      <span id="cname">card name</span>
+      <img id="sample" src="img/sample.png">
+      <br>
+      <div id="desc">
+        <h3>[Requirement]:</h3> 
+        <span id="requirement">You can send 1 card from your hand to the GY.</span>
+        <h3>[Effect]:</h3>
+        <span id="effect">Special Summon 1 monster (Level 7 or higher DARK Spellcaster) from your hand, and if it is "Sevens Road Magician", this card gains 400 ATK until the end of this turn.</span>
+      </div>
+    </td>
+    <td style="width:540px">
+      <img src="img/field.png">
+      <div class="dropdown2">
+        <img class="myhand" id="mzone1" src="img/sadd.png">
+        <div class="dropdown-content11">
+          <a href="#" class="hit">Hit</a>
+          <a href="#" class="effect">Effect</a>
+          <a href="#" class="flip">Flip</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="mzone2" src="img/sadd.png">
+        <div class="dropdown-content12">
+          <a href="#" class="hit">Hit</a>
+          <a href="#" class="effect">Effect</a>
+          <a href="#" class="flip">Flip</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="mzone3" src="img/sadd.png">
+        <div class="dropdown-content13">
+          <a href="#" class="hit">Hit</a>
+          <a href="#" class="effect">Effect</a>
+          <a href="#" class="flip">Flip</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="stzone1" src="img/sadd.png">
+        <div class="dropdown-content2">
+          <a href="#" class="activate">Activate</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="stzone2" src="img/sadd.png">
+        <div class="dropdown-content3">
+          <a href="#" class="activate">Activate</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="stzone3" src="img/sadd.png">
+        <div class="dropdown-content4">
+          <a href="#" class="activate">Activate</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="field1" src="img/sadd.png">
+        <div class="dropdown-content5">
+          <a href="#" class="activate">Activate</a>
+        </div>
+      </div>
+      <img id="deck1" src="img/c1.png">
+      <div class="dropdown2">
+        <img class="myhand" id="gy1" src="img/sadd.png">
+        <div class="dropdown-content6">
+          <a href="#" class="view">View</a>
+          <a href="#" class="activate">Activate</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="ban1" src="img/sadd.png">
+        <div class="dropdown-content7">
+          <a href="#" class="view">View</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="extra1" src="img/c1.png">
+        <div class="dropdown-content8">
+          <a href="#" class="view">View</a>
+        </div>
+      </div>
+      <img id="mzone4" src="img/sadd.png">
+      <img id="mzone5" src="img/sadd.png">
+      <img id="mzone6" src="img/sadd.png">
+      <img id="stzone4" src="img/sadd.png">
+      <img id="stzone5" src="img/sadd.png">
+      <img id="stzone6" src="img/sadd.png">
+      <img id="field2" src="img/sadd.png">
+      <img id="deck2" src="img/c2.png">
+      <div class="dropdown2">
+        <img class="myhand" id="gy2" src="img/sadd.png">
+        <div class="dropdown-content9">
+          <a href="#" class="view">View</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <img class="myhand" id="ban2" src="img/sadd.png">
+        <div class="dropdown-content10">
+          <a href="#" class="view">View</a>
+        </div>
+      </div>
+      <img id="extra2" src="img/c2.png">
+      <button disabled id="b1" type="button">Draw</button>
+      <button disabled id="b2" type="button" onclick="mainphase();">Main</button>
+      <button id="b3" type="button" onclick="battlephase();">Battle</button>
+      <button id="b4" type="button" onclick="endphase();">End</button>
+      <b id="c1" class="count">40</b>
+      <b id="c2" class="count">0</b>
+      <b id="c3" class="count">0</b>
+      <b id="c4" class="count">15</b>
+      <b id="c5" class="count">15</b>
+      <b id="c6" class="count">0</b>
+      <b id="c7" class="count">0</b>
+      <b id="c8" class="count">40</b>
+      bh: <span id="bhtxt">teste</span>
+      <form>
+        <input disabled type="radio" id="radio1" name="rmonster" value="1">
+        <input disabled type="radio" id="radio2" name="rmonster" value="2">
+        <input disabled type="radio" id="radio3" name="rmonster" value="3">
+        <input disabled type="radio" id="radio4" name="rtrap" value="4">
+        <input disabled type="radio" id="radio5" name="rtrap" value="5">
+        <input disabled type="radio" id="radio6" name="rtrap" value="6">
+      </form>
+    </td>
+    <td>
+      <div id="log">log:</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img class="profile" id="p1" src="img/p1.jpg">
+      <p class="playerinfo">
+        Player 1
+        <br>
+        <b class="lp">LP 8000</b>
+      </p>
+    </td>
+    <td>
+      <div class="dropdown">
+        <img class="myhand" id="hand1" src="img/c1.png">
+        <div class="dropdown-content">
+          <a href="#" class="summon">Summon</a>
+          <a href="#" class="activate">Activate</a>
+          <a href="#" class="set">Set</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <img class="myhand" id="hand2" src="img/c1.png">
+        <div class="dropdown-content">
+          <a href="#" class="summon">Summon</a>
+          <a href="#" class="activate">Activate</a>
+          <a href="#" class="set">Set</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <img class="myhand" id="hand3" src="img/c1.png">
+        <div class="dropdown-content">
+          <a href="#" class="summon">Summon</a>
+          <a href="#" class="activate">Activate</a>
+          <a href="#" class="set">Set</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <img class="myhand" id="hand4" src="img/c1.png">
+        <div class="dropdown-content">
+          <a href="#" class="summon">Summon</a>
+          <a href="#" class="activate">Activate</a>
+          <a href="#" class="set">Set</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <img class="myhand" id="hand5" src="img/c1.png">
+        <div class="dropdown-content">
+          <a href="#" class="summon">Summon</a>
+          <a href="#" class="activate">Activate</a>
+          <a href="#" class="set">Set</a>
+        </div>
+      </div>
+    </td>
+    <td>
+      <button id="b5" type="button" onclick="location.reload();">Restart</button>
+      <button id="b6" type="button" onclick="">Freeze</button>
+      <button id="b7" type="button" onclick="">Cancel</button>
+      <button id="b8" type="button" onclick="">Chain</button>
+      <button id="b9" type="button" onclick="">Options</button>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<script type="text/javascript"> 
+  let curcard = 0;
+  let botmonstercont = 0;
+  let botspellcount = 0;
+  let target;
+  let m1obj, m2obj, m3obj;
+  $(".myhand").hover(function(){
+    curcard = search($(this).attr('src'));
+    $('#cname').html(curcard.name);
+    $('#requirement').html(curcard.eff);
+    $('#effect').html(curcard.req);
+    //$(this).next().append('<a href="#" class="set">Set</a>');
+    $('#desc').text($(this).attr('alt')); 
+    $("#sample").attr('src',$(this).attr('src')); 
+    handoptions(curcard.cat);
+  });
+  $('.summon').on('click', function (event) {
+    event.preventDefault();
+    summon(curcard);  
+    $(this).parent().prev("img").hide();  
+  });
+  $('.set').on('click', function (event) {
+    event.preventDefault();
+    set(curcard,curcard.cat);  
+    $(this).parent().prev("img").hide();  
+  });
+  $('.hit').on('click', function (event) {
+    event.preventDefault();
+    hit($(this).parent().prev("img").attr('id'));
+  });
+  $('.flip').on('click', function (event) {
+    event.preventDefault();
+    flip($(this).parent().prev("img").attr('id'));
+  });
+  $('input').on('click', function (event) {
+    target = $(this).attr('value');
+    //alert(target);
+  });
+  botstart();
+  givehand();
+</script>

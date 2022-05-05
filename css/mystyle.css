@@ -1,0 +1,456 @@
+table,th,td {
+  border:1px solid black;
+}
+#b1{
+  position: relative;
+  left: 100px;
+  bottom: 350px;
+}
+#b2{
+  position: relative;
+  left: 110px;
+  bottom: 350px;
+}
+#b3{
+  position: relative;
+  left: 120px;
+  bottom: 350px;
+}
+#b4{
+  position: relative;
+  left: 130px;
+  bottom: 350px;
+}
+#log{
+  margin: 10px;
+  height: 630px;
+  padding: 5px;
+  background-color: black;
+  overflow: auto;
+  color: yellow;
+}
+#tempo{
+  font-size: 400%;
+  color: #05DF22;
+}
+/* unvisited link */
+a:link {color: red;}
+/* visited link */
+a:visited {color: green;}
+/* mouse over link */
+a:hover {color: hotpink;}
+/* selected link */
+a:active {color: blue;}
+body{background-color: grey;}
+form{
+  position: fixed;
+  bottom: 774px;
+  left: 400px;
+}
+#radio1{
+  position: relative;
+  left: 36px;
+  top: 264px;
+}
+#radio2{
+  position: relative;
+  left: 110px;
+  top: 264px;
+}
+#radio3{
+  position: relative;
+  left: 184px;
+  top: 264px;
+}
+#radio4{
+  position: relative;
+  right: 39px;
+}
+#radio5{
+  position: relative;
+  left: 30px;
+}
+#radio6{
+  position: relative;
+  left: 105px;
+}
+#desc{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  top: 0px;
+}
+#sample{
+  position: relative;
+  top: 0px;
+  width: 260px;
+  height: 378px;
+}
+.myhand{
+  height: 110px;
+}
+.yourhand{
+  height: 110px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown2 {
+  position: absolute;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 130px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 220px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 320px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content5 {
+  display: none;
+  position: absolute;
+  bottom: 160px;
+  left: 15px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content6 {
+  display: none;
+  position: absolute;
+  bottom: 160px;
+  left: 440px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content7 {
+  display: none;
+  position: absolute;
+  bottom: 300px;
+  left: 440px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content8 {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content9 {
+  display: none;
+  position: absolute;
+  bottom: 460px;
+  left: 15px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content10 {
+  display: none;
+  position: absolute;
+  bottom: 300px;
+  left: 15px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content11 {
+  display: none;
+  position: absolute;
+  bottom: 180px;
+  left: 130px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content12 {
+  display: none;
+  position: absolute;
+  bottom: 180px;
+  left: 230px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content13 {
+  display: none;
+  position: absolute;
+  bottom: 180px;
+  left: 330px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content3 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content4 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content5 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content6 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content7 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content8 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content9 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content10 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content11 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content12 {
+  display: block;
+}
+.dropdown2:hover .dropdown-content13 {
+  display: block;
+}
+.lp{
+  font-size: 200%;
+  color: red;
+  text-shadow: 1px 1px 2px purple;
+}
+.profile{
+  float: left;
+}
+.playerinfo{
+  margin: 20px;
+  left: 50px;
+}
+#mzone1{
+  height: 110px;
+  position: fixed;
+  top: 500px;
+  left: 410px;
+}
+#mzone2{
+  height: 110px;
+  position: fixed;
+  top: 500px;
+  left: 505px;
+}
+#mzone3{
+  height: 110px;
+  position: fixed;
+  top: 500px;
+  left: 605px;
+}
+#mzone4{
+  height: 110px;
+  position: fixed;
+  top: 285px;
+  left: 410px;
+	transform: rotate(180deg);
+}
+#mzone5{
+  height: 110px;
+  position: fixed;
+  top: 285px;
+  left: 505px;
+	transform: rotate(180deg);
+}
+#mzone6{
+  height: 110px;
+  position: fixed;
+  top: 285px;
+  left: 605px;
+	transform: rotate(180deg);
+}
+#stzone1{
+  height: 110px;
+  position: fixed;
+  top: 620px;
+  left: 410px;
+}
+#stzone2{
+  height: 110px;
+  position: fixed;
+  top: 620px;
+  left: 505px;
+}
+#stzone3{
+  height: 110px;
+  position: fixed;
+  top: 620px;
+  left: 605px;
+}
+#stzone4{
+  height: 110px;
+  position: fixed;
+  top: 166px;
+  left: 410px;
+	transform: rotate(180deg);
+}
+#stzone5{
+  height: 110px;
+  position: fixed;
+  top: 166px;
+  left: 505px;
+	transform: rotate(180deg);
+}
+#stzone6{
+  height: 110px;
+  position: fixed;
+  top: 166px;
+  left: 605px;
+	transform: rotate(180deg);
+}
+#deck1{
+  height: 110px;
+  position: fixed;
+  top: 648px;
+  left: 723px;
+}
+#deck2{
+  height: 110px;
+  position: fixed;
+  top: 141px;
+  left: 292px;
+}
+#gy1{
+  height: 110px;
+  position: fixed;
+  top: 522px;
+  left: 723px;
+}
+#gy2{
+  height: 110px;
+  position: fixed;
+  top: 269px;
+  left: 292px;
+	transform: rotate(180deg);
+}
+#ban1{
+  height: 110px;
+  position: fixed;
+  top: 392px;
+  left: 723px;
+}
+#ban2{
+  height: 110px;
+  position: fixed;
+  top: 392px;
+  left: 292px;
+	transform: rotate(180deg);
+}
+#field1{
+  height: 110px;
+  position: fixed;
+  top: 520px;
+  left: 292px;
+}
+#field2{
+  height: 110px;
+  position: fixed;
+  top: 269px;
+  left: 723px;
+	transform: rotate(180deg);
+}
+#extra1{
+  height: 110px;
+  position: fixed;
+  top: 648px;
+  left: 292px;
+}
+#extra2{
+  height: 110px;
+  position: fixed;
+  top: 141px;
+  left: 722px;
+}
+#c1{
+  position: fixed;
+  top: 141px;
+  left: 292px;
+}
+#c2{
+  position: fixed;
+  top: 266px;
+  left: 295px;
+}
+#c3{
+  position: fixed;
+  top: 390px;
+  left: 295px;
+}
+#c4{
+  position: fixed;
+  top: 648px;
+  left: 292px;
+}
+#c5{
+  position: fixed;
+  top: 141px;
+  left: 723px;
+}
+#c6{
+  position: fixed;
+  top: 390px;
+  left: 725px;
+}
+#c7{
+  position: fixed;
+  top: 520px;
+  left: 723px;
+}
+#c8{
+  position: fixed;
+  top: 648px;
+  left: 723px;
+}
+.count {
+  font-size: 180%;
+  color: yellow;
+  text-shadow: 2px 2px 4px #000000;
+}
